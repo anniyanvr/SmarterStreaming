@@ -1,6 +1,6 @@
 **视沃科技-大牛直播SDK <a href="https://www.daniusdk.com" target="_blank">daniusdk.com</a>**
 
-始于2015年，致力于传统行业极致体验的音视频直播技术解决方案，产品涵盖跨平台（Windows、Linux（x64_64|aarch64架构）、Android、iOS平台）的实时RTMP推流、RTMP/RTSP直播播放(支持RTSP/RTMP H.265)、GB28181设备接入、实时录像、多路流媒体转发(RTSP转RTMP，RTMP转RTMP，RTSP|RTMP转GB28181)、音视频导播、动态视频合成、音频混音、一对一互动直播、内置轻量级RTSP服务、RTSP网关服务等，比快更快，业界真正稳定可靠的超低延迟直播SDK(毫秒级延迟，低延迟模式下150~300ms)。
+始于2015年，致力于传统行业极致体验的音视频直播技术解决方案，产品涵盖跨平台的实时RTMP推流、RTMP直播播放(支持RTMP扩展H.265，Enhanced RTMP H.265)、RTSP直播播放、HTTP-FLV直播播放、GB28181设备接入、推送端播放端实时录像、多路流媒体转发(RTSP转RTMP，RTMP转RTMP，RTSP|RTMP转GB28181)、音视频导播、动态视频合成、音频混音、一对一互动直播、内置轻量级RTSP服务、RTSP网关服务等，比快更快，业界真正稳定可靠的超低延迟直播SDK(毫秒级延迟，低延迟模式下150~300ms)。
 
 适用于**在线教育、智慧教室|无纸化推屏|会议、运营商视频云平台、执法记录、电力巡检、智慧水利、智慧煤矿、管廊隧道、平衡操控、虚拟仿真实训教学、VR教育、云展会、金融双录、远程医疗、智能可视门禁对讲、智慧安防、智能家居、物联网、智能车载、传统硬件领域、媒体移动直播、应急指挥调度(针对保险、城管、交警、消防、公安等职能管理部门的单兵应急执法系统)、远程专家诊断、可视化巡检、(如电信/电力线路/铁路沿线/水利设施/油田/消防设施巡检)、移动视频安防监控，企业内训、监控对接**等场景。
 
@@ -112,6 +112,8 @@
 
 - [x] [**RTSP直播播放器SDK**](https://daniusdk.com/index.php/2018/12/12/%E5%A4%A7%E7%89%9B%E7%9B%B4%E6%92%ADrtsp%E6%92%AD%E6%94%BE%E5%99%A8sdk/) 支持RTSP H.265播放及扩展录像、业内为数不多真正好用的RTSP播放器SDK;
 
+- [x] [**HTTP-FLV直播播放器SDK**](https://daniusdk.com/index.php/2025/03/24/http-flv%e7%9b%b4%e6%92%ad%e6%92%ad%e6%94%besdk/) 支持HTTP/HTTPS-FLV播放及扩展录像、比快更快，HTTP-FLV一样可以毫秒级延迟;
+
 - [x] [**Unity3D RTMP/RTSP直播播放器SDK**](https://daniusdk.com/index.php/2018/06/04/%E5%A4%A7%E7%89%9B%E7%9B%B4%E6%92%ADsdk-unity3d%E7%9B%B4%E6%92%AD%E6%92%AD%E6%94%BE%E5%99%A8sdk/) 业内为数不多的Android支持Unity3D的超低延迟RTMP/RTSP直播播放器SDK，支持快照、录像、实时静音、view旋转、快速切换URL等特性;
      
 - [x] [**Android平台外部编码数据实时预览SDK**](https://daniusdk.com/index.php/2023/05/17/android%e5%b9%b3%e5%8f%b0%e5%a4%96%e9%83%a8%e7%bc%96%e7%a0%81%e6%95%b0%e6%8d%ae%e5%ae%9e%e6%97%b6%e9%a2%84%e8%a7%88%e6%a8%a1%e5%9d%97/) 第三方平台编码后数据(如H.264/H.265/PCMA/PCMU/AAC)预览播放模块；
@@ -163,51 +165,41 @@
 
 ## 大牛直播SDK相关demo介绍 ##	
 
-**1. Windows平台测试EXE：**	
+**1. Windows平台集成对接DEMO：**	
 
-- [x] [**SmartPublisherDemo.exe**] RTMP|RTSP推送、轻量级RTSP服务、扩展SEI发送、采集录像演示程序；	
+- [x] [**推送模块**] RTMP推送SDK、轻量级RTSP服务SDK、录像SDK(C++|C#) Demo工程（对应SmartPublisherDemo.exe）；
+      
+- [x]  [**播放模块**] RTMP|RTSP播放SDK(C++|C#|WPF) Demo工程（对应SmartPlayer.exe）；
+      
+- [x]  [**转发模块**] 多路RTSP|RTMP转RTMP推送模块SDK(C++|C#) Demo工程（对应SmartStreamRelayDemo.exe）；
+      
+- [x]  [**混流模块**] 混流SDK(C++) Demo工程（对应SmartEchoCancellation.exe）；
+      
+- [x]  [**一对一互动模块**] 基于标准RTMP服务的一对一互动demo工程（C#），可扩展RTSP一对一互动（对应SmartEchoCancellation.exe）。
 
-- [x] [**SmartPlayer.exe**] RTMP|RTSP播放SDK、扩展SEI接收、拉流录像演示程序；	
+**2. Linux平台(含X86_64|aarch64架构)集成对接DEMO：**	
 
-- [x] [**SmartStreamRelayDemo.exe**] 多路RTSP|RTMP转RTMP推送演示程序；	
+- [x] [**推送模块**] RTMP推送SDK录像SDK(C++|C#) Demo工程（对应publisherdemo）；
 
-- [x] [**SmartMixStreamDemo.exe**] RTMP|RTSP拉流然后和本地摄像头或屏幕**合流**演示程序（demo源码以C++为例）；	
+- [x] [**播放模块**] RTMP|RTSP播放SDK Demo工程（对应playerdemo）；
 
-- [x] [**SmartEchoCancellation.exe**] 基于标准RTMP服务的一对一互动演示程序（demo源码以C#为例）；	
+- [x] [**轻量级RTSP服务模块**] 轻量级RTSP服务SDK Demo工程（对应rtspserverdemo）；
 
-- [x] [**Windows平台RTMP|RTSP 4路播放演示程序**] Windows 4路RTSP/RTMP播放Demo；
-
-- [x] [**Windows平台IE浏览器OCX控件RTMP|RTSP播放测试程序**] Windows平台RTMP|RTSP播放SDK OCX控件。
-
-**2. Windows平台集成对接DEMO：**	
-
-- [x] [**Windows平台C++ SDK demo工程**] Windows平台RTMP|RTSP推送SDK、内置RTSP服务SDK、录像SDK(C++) Demo
-
-- [x] [**Windows平台C++ SDK demo工程**] Windows平台RTMP|RTSP播放SDK(C++) Demo
-
-- [x] [**Windows平台C++ SDK demo工程**] Windows平台多路RTSP|RTMP转RTMP推送模块SDK(C++) Demo
-
-- [x] [**Windows平台C++ SDK demo工程**] Windows平台混流SDK(C++) Demo
-
-- [x] [**Windows平台C# SDK demo工程**] Windows平台RTMP|RTSP推送SDK、内置RTSP服务SDK、录像SDK(C#) Demo
-
-- [x] [**Windows平台C# SDK demo工程**] Windows平台RTMP|RTSP播放SDK(C#) Demo
-
-- [x] [**Windows平台C# SDK demo工程**] Windows平台多路RTSP|RTMP转RTMP推送模块SDK(C#) Demo
-
-- [x] [**Windows平台一对一互动SDK demo工程(以C#为例)**] 基于标准RTMP服务的一对一互动demo，可扩展RTSP一对一互动
+- [x] [**转发模块**] 多路RTSP|RTMP转RTMP推送模块SDK Demo工程（对应relaydemo）；
 
 **3.Android平台集成对接DEMO：**	
 
 - [x] [**SmartPlayerV2**](https://github.com/daniulive/SmarterStreaming/tree/master/SourceCode/AndroidStudio/SmartPlayerV2): RTMP|RTSP直播播放SDK demo，涵盖实时录像、快照、扩展SEI数据接收等功能；	
 
-- [x] [**SmartPublisherV2**](https://github.com/daniulive/SmarterStreaming/tree/master/SourceCode/AndroidStudio/SmartPublisherV2): RTMP直播推送SDK、RTSP直播推送SDK、GB28181接入SDK、轻量级RTSP服务SDK、扩展SEI发送SDK、实时录像SDK多合一demo；	
+- [x] [**SmartPublisherV2**](https://github.com/daniulive/SmarterStreaming/tree/master/SourceCode/AndroidStudio/SmartPublisherV2): RTMP直播推送SDK、GB28181接入SDK、轻量级RTSP服务SDK、扩展SEI发送SDK、实时录像SDK多合一demo；
+
+- [x] [**Camera2PublisherV2**](https://github.com/daniulive/SmarterStreaming/tree/master/SourceCode/AndroidStudio/SmartPublisherV2): 基于Android平台Camera2摄像头数据采集，RTMP直播推送SDK、GB28181接入SDK、轻量级RTSP服务SDK、实时录像SDK多合一demo；	
 
 - [x] [**SmartEchoCancellationV2**](https://github.com/daniulive/SmarterStreaming/tree/master/SourceCode/AndroidStudio/SmartEchoCancellationV2): 基于RTMP的一对一互动demo(可扩展RTSP一对一互动)；	
 
 - [x] [**SmartServiceCameraPublisherV2**](https://github.com/daniulive/SmarterStreaming/tree/master/SourceCode/AndroidStudio/SmartServiceCameraPublisherV2): 后台摄像头RTMP直播推送SDK；	
 
-- [x] [**SmartServicePublisherV2**](https://github.com/daniulive/SmarterStreaming/tree/master/SourceCode/AndroidStudio/SmartServicePublisherV2): 智慧教室|无纸化会议等屏幕采集(推屏) 、RTMP直播推送demo；	
+- [x] [**SmartServicePublisherV2**](https://github.com/daniulive/SmarterStreaming/tree/master/SourceCode/AndroidStudio/SmartServicePublisherV2): 智慧教室|无纸化会议等屏幕、麦克风扬声器采集 、RTMP直播推送、轻量级RTSP服务demo；	
 
 - [x] [**SmartRelayDemoV2**](https://github.com/daniulive/SmarterStreaming/tree/master/SourceCode/AndroidStudio/SmartRelayDemoV2): RTMP|RTSP直播播放SDK、RTMP|RTSP转RTMP推送SDK、RTMP|RTSP实时录像、轻量级RTSP服务四合一demo。	
 
