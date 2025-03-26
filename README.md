@@ -48,11 +48,11 @@
 
 **RTSP/RTMP推拉流SDK概览图**
 
-<img src="http://daniusdk.com/wp-content/uploads/2023/05/%E8%A7%86%E6%B2%83%E7%A7%91%E6%8A%80%E4%BA%A7%E5%93%81%E6%9E%B6%E6%9E%84%E5%9B%BE.png" alt="RTSP/RTMP推拉流SDK概览图" />
+<img src="https://daniusdk.com/wp-content/uploads/2023/05/%E8%A7%86%E6%B2%83%E7%A7%91%E6%8A%80%E4%BA%A7%E5%93%81%E6%9E%B6%E6%9E%84%E5%9B%BE.png" alt="RTSP/RTMP推拉流SDK概览图" />
 
 **多路RTSP/RTMP转RTMP推送SDK概览图**
 
-<img src="http://daniusdk.com/wp-content/uploads/2020/01/daniulive_relaysdk_20200130.png" alt="多路RTSP/RTMP转RTMP推送SDK概览图" />
+<img src="https://daniusdk.com/wp-content/uploads/2020/01/daniulive_relaysdk_20200130.png" alt="多路RTSP/RTMP转RTMP推送SDK概览图" />
 
 ## 支持平台架构 ##
 |支持平台|支持架构|
