@@ -8,9 +8,11 @@
 
 **[latest release note](https://daniusdk.com/index.php/tag/release-note/)**
 
+**[延迟测试视频](https://daniusdk.blog.csdn.net/?type=video)**
+
 ## 平台扩展 ## 
 
-除了Windows/Linux/Android/iOS原生音视频技术方案，大牛直播SDK发布了Unity环境下的RTMP推流（Windows、Linux、Android平台）和RTMP|RTSP拉流（Windows、Linux、Android和iOS平台）低延迟的解决方案。
+除了Windows/Linux/Android/iOS Native SDK，大牛直播SDK发布了Unity环境下的RTMP推流|轻量级RTSP服务（Windows平台+Linux平台+Android平台）和RTMP|RTSP拉流（Windows、Linux、Android和iOS平台全覆盖）低延迟的解决方案。
 
 目前，大牛直播SDK的Unity3D环境下已覆盖以下SDK：
 
@@ -46,13 +48,13 @@
 
 ## 模块概览 ## 
 
-**RTSP/RTMP推拉流SDK概览图**
+**模块架构图**
 
-<img src="https://daniusdk.com/wp-content/uploads/2023/05/%E8%A7%86%E6%B2%83%E7%A7%91%E6%8A%80%E4%BA%A7%E5%93%81%E6%9E%B6%E6%9E%84%E5%9B%BE.png" alt="RTSP/RTMP推拉流SDK概览图" />
+<img src="http://daniusdk.com/wp-content/uploads/2023/05/%E8%A7%86%E6%B2%83%E7%A7%91%E6%8A%80%E4%BA%A7%E5%93%81%E6%9E%B6%E6%9E%84%E5%9B%BE.png" alt="RTSP/RTMP推拉流SDK概览图" />
 
-**多路RTSP/RTMP转RTMP推送SDK概览图**
+**跨平台模块概览图**
 
-<img src="https://daniusdk.com/wp-content/uploads/2020/01/daniulive_relaysdk_20200130.png" alt="多路RTSP/RTMP转RTMP推送SDK概览图" />
+<img src="http://daniusdk.com/wp-content/uploads/2025/06/%E6%A8%A1%E5%9D%97%E6%80%BB%E8%A7%88.png" alt="模块总览" />
 
 ## 支持平台架构 ##
 |支持平台|支持架构|
